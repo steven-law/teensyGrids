@@ -1,4 +1,3 @@
-//testchange
 const byte START = 250;
 const byte CONTINUE = 251;
 const byte STOP = 252;
@@ -106,6 +105,13 @@ void beatClock1(byte realtimebyte) {
     }
     if (clockcounter == (currentClockcount2 + 5)) {
       usbMIDI.sendNoteOff(37, 0, 10);
+    }
+//        if (beat1[1] [(stepcount - 1)] == 1) {
+//      usbMIDI.sendNoteOn(38, 96, 10);
+//      clockcounter = currentClockcount3;
+//    }
+//    if (clockcounter == (currentClockcount3 + 5)) {
+//      usbMIDI.sendNoteOff(38, 0, 10);
     }
   }
 }
